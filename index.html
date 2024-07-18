@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>School Voting App</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    /* Header styles */
+    header {
+      /*background-color: #71c9e9;*/
+      padding: 20px;
+      color: #150404;
+    }
+
+    /* Logo styles */
+    .logo {
+      max-width: 100px;
+      float: right;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+
+
+
+  
+    <body>
+      <header>
+        <body>
+            <header>
+              <img src="logo.jpg" alt="Logo" class="logo">
+              <h2>St.Joseph's Anglo-Indian Girls H S S, Kozhikode 32</h2>
+            </header>
+
+    <h1>VoteHub:Your Platform for School Election</h1>
+    <div class="top-bar">
+        <span id="total-votes">Total Votes: 0</span>
+        <button id="show-results">Show Results</button>
+    </div>
+    <div class="voting-grid" id="voting-grid">
+        <!-- Candidate Cards will be dynamically generated here -->
+    </div>
+</div>
+  <!-- Add this inside the body tag -->
+<div id="vote-cast-modal" class="modal">
+    <div class="modal-content">
+        <p>Vote casted successfully</p>
+        <button id="ok-button">OK</button>
+    </div>
+</div>
+
+<div id="candidate-details-screen" class="modal">
+    <div class="modal-content">
+        <h2>Enter Candidate Details</h2>
+        <div class="form-group">
+            <label for="candidate-name">Name:</label>
+            <input type="text" id="candidate-name" />
+        </div>
+        <div class="form-group">
+            <label for="candidate-img">Image URL:</label>
+            <input type="text" id="candidate-img" />
+        </div>
+        <button id="save-details-button">Save</button>
+        <button id="cancel-button">Cancel</button>
+    </div>
+</div>
+
+
+<div class="result-screen" id="result-screen">
+    <button id="back-to-voting">Back to Voting</button>
+    <button id="reset-poll">Reset Poll</button>
+    <div id="results-container">
+        <!-- Result screen content will be displayed here -->
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
